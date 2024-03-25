@@ -1,0 +1,41 @@
+.content
+    display: grid
+    grid-template-columns: 2fr 1fr
+    grid-template-rows: 1fr 0.5fr
+    grid-template-areas: "frame description" "mat description"
+    grid-gap: 10px
+    padding: 10px
+    
+    
+
+
+
+.img , .description ,.manufacturing
+    background-color: rgba(0, 0, 0, 0.7)
+    padding: 10px
+    border-radius: 10px
+    overflow: hidden
+
+.description ,.manufacturing
+    padding: 30px
+
+.img
+    grid-area: frame
+    iframe
+        width: 100%
+        height: 100%
+        border-radius: 10px
+
+.description
+    grid-area: description
+
+.manufacturing
+    grid-area: mat
+
+
+
+@media screen and (max-width: 1024px) 
+    .content
+        grid-template-columns: 1fr
+        grid-template-rows: 2fr 1fr 1fr
+        grid-template-areas: "frame" "description" "mat"
